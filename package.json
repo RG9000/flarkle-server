@@ -1,0 +1,11 @@
+{
+  "name": "flarkle-server",
+  "version": "0.0.1",
+  "description": "node js backend for flarkle",
+  "dependencies": {
+    "express": "^4.18.2",
+    "prompt-sync": "^4.2.0",
+    "socket.io": "^4.5.4",
+    "socket.io-client": "^4.5.4"
+  }
+}
