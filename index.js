@@ -35,8 +35,8 @@ io.on('connection', async (socket) => {
       otherClient.leave('lobby');
       otherClient.join(roomName);
       console.log("connected " + socket.id + " with " + clientsInLobby[0].id);
-      socket.emit("game found", "you are now in a game with " + otherClient.id);
-      clientsInLobby[0].emit("connected to", "you are now in a game with " + socket.id);
+      socket.emit("game found", otherClient.id);
+      clientsInLobby[0].emit("connected to", socket.id);
     }
   });
 
